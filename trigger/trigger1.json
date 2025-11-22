@@ -1,0 +1,25 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "ingestiontoraw",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/cvdataset/blobs/",
+			"blobPathEndsWith": "*.json",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/1e185345-c10e-4e9f-9949-bebcf63d65e6/resourceGroups/NynResourceGrp/providers/Microsoft.Storage/storageAccounts/nynstrorageaccadlsgen2",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
