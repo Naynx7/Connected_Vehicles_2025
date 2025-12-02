@@ -13,7 +13,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/testcontainer1/blobs/2010",
+			"blobPathBeginsWith": "/testcontainer1/blobs/2010-12",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/1e185345-c10e-4e9f-9949-bebcf63d65e6/resourceGroups/NynResourceGrp/providers/Microsoft.Storage/storageAccounts/teststorageblobnyn",
 			"events": [
