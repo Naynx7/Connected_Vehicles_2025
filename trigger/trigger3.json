@@ -1,0 +1,24 @@
+{
+	"name": "trigger3",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "MoreThan10daysOld",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/testcontainer1/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/1e185345-c10e-4e9f-9949-bebcf63d65e6/resourceGroups/NynResourceGrp/providers/Microsoft.Storage/storageAccounts/teststorageblobnyn",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
