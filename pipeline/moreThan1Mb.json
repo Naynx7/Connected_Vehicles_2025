@@ -99,7 +99,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@greater(item().size,50)",
+									"value": "@greater(activity('Get Metadata2').output.size,50)",
 									"type": "Expression"
 								}
 							}
