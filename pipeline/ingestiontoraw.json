@@ -36,25 +36,7 @@
 						}
 					},
 					"enableStaging": false
-				},
-				"inputs": [
-					{
-						"referenceName": "tolanding",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "Json2",
-						"type": "DatasetReference",
-						"parameters": {
-							"folderPath": {
-								"value": "@concat(formatDateTime(utcNow(),'yyyy'),'/', formatDateTime(utcNow(),'MM'),'/', formatDateTime(utcNow(),'dd'))",
-								"type": "Expression"
-							}
-						}
-					}
-				]
+				}
 			}
 		],
 		"annotations": []
